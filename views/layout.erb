@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=@title%></title>
+    <link rel="shortcut icon" href="phone-icon.jpg">
+</head>
+<body>
+
+<header>
+<h1>CRM</h1>
+</header>
+
+<div class="options"><a class="h_button" href="/home">Home</a></div>
+<div class="options"><a class="h_button" href="/add_contact_form">Add a contact</a></div>
+<div class="options"><a class="h_button" href="/about">About</a></div>
+
+
+<%=yield%>
+<footer>
+<h3>&#169;webdev 2021</h3>
+</footer>
+    
+</body>
+</html>

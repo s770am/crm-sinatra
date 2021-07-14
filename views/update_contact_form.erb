@@ -1,0 +1,30 @@
+<div id="form">
+
+<h1>update info for<%= "#{@contact.first_name} #{@contact.last_name}"  %></h1>
+
+<form action= <%="/update_contact/#{@contact.id}" %> method="post">
+<div>
+<label for="first_name">First name:</label>
+<input type="text" name="first_name" id="first_name" value=<%= "#{@contact.first_name}"%>>
+
+<label for="last_name">Last name:</label>
+<input type="text" name="last_name" id="last_name" value=<%= "#{@contact.last_name}"%>>
+</div>
+
+<div>
+<label for="number">Phone number:</label>
+<input type="tel" name="number" id="number" value=<%= "#{@contact.number}"%>>
+</div>
+
+<div>
+<label for="email">Email adress:</label>
+<input type="text" name="email" id="email" value=<%= "#{@contact.email}"%>>
+</div>
+
+<div>
+<button type="submit">update this contact</button>
+</div>
+
+</form>
+
+</div>

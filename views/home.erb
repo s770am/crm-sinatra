@@ -1,0 +1,12 @@
+<div id="home">
+
+<% @contacts.each do |contact| %>
+    <div class="contact">
+    <h6><%= "#{contact.first_name} #{contact.last_name}(#{contact.email})" %></h6>
+<p><a href=<%= "/update_contact_form/#{contact.id}"%>>Edit | </a><a href=<%= "/delete/#{contact.id}"%>>Delete</a> </p>
+    </div>
+<% end %>
+
+
+</div>
+
