@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=@title%></title>
     <link rel="shortcut icon" href="phone-icon.jpg">
+    <link rel="stylesheet" href="layout.css">
 </head>
 <body>
 
 <header>
-<h1>CRM</h1>
-</header>
+<h1 class="cow">CRM</h1>
+
 
 <div class="options"><a class="h_button" href="/home">Home</a></div>
 <div class="options"><a class="h_button" href="/add_contact_form">Add a contact</a></div>
 <div class="options"><a class="h_button" href="/about">About</a></div>
-
+</header>
 
 <%=yield%>
 <footer>

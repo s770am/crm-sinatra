@@ -1,9 +1,20 @@
 <div id="home">
 
+<div class="title">
+<h2 >There <% if @contacts.length != 1 %>
+are
+<% else %>
+is
+<% end %>
+ <strong><%= @contacts.length %></strong> Contact<% if @contacts.length != 1%>s
+<% end %>
+</h2>
+</div>
+
 <% @contacts.each do |contact| %>
     <div class="contact">
     <h6><%= "#{contact.first_name} #{contact.last_name}(#{contact.email})" %></h6>
-<p><a href=<%= "/update_contact_form/#{contact.id}"%>>Edit | </a><a href=<%= "/delete/#{contact.id}"%>>Delete</a> </p>
+<p><a href=<%= "/update_contact_form/#{contact.id}"%>>Edit</a> | <a href=<%= "/delete/#{contact.id}"%>>Delete</a> </p>
     </div>
 <% end %>
 
